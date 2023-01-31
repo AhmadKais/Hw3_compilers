@@ -1,0 +1,14 @@
+PROGRAM h
+	PROCEDURE p (a ARRAY[1:7] OF FIXED)
+		FUNCTION f(b a) : FIXED
+			{
+			p(b);
+			p(a);
+			f=f(b);
+			}
+		{
+		    a[1] = 1;
+		}
+	{
+	a[1] = 0;
+	}
